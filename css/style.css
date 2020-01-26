@@ -116,6 +116,28 @@ html {
   background-position: center;
 }
 
+@media screen and (min-width: 768px){
+  .hero-container{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2)
+    ), url(../images/hero/tablet.png);
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .hero-container{
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2)
+    ), url(../images/hero/desktop.png);
+  }
+}
+
+
+
 .hero {
   padding-left: 12px;
   padding-right: 12px;
@@ -159,15 +181,34 @@ html {
 
 /*------СЕКЦИЯ---------*/
 .section {
-  padding-top: 24px;
+padding-top: 24px;
   padding-bottom: 24px;
-  display: flex;
+
 }
 
 .features {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@media screen and (max-width: 767px){
+  .features-item + .features-item{
+    margin-top: 12px;
+
+  }
+
+}
+
+@media screen and (min-width: 768px){
+  .features-item{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-item{
+    flex-basis: 50%;
+  }
 }
 
 .title {
@@ -178,6 +219,8 @@ html {
   font-family: var(--title-font-stack);
   text-align: center;
 }
+
+
 .img {
   display: block;
   max-width: 100%;
@@ -224,6 +267,7 @@ html {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .image {
   margin-bottom: 20px;
 }
