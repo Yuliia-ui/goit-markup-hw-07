@@ -124,6 +124,18 @@ html {
       rgba(0, 0, 0, 0.2)
     ), url(../images/hero/tablet.png);
   }
+
+  .hero h1{
+    font-size: 52px;
+  }
+  .hero p{
+    font-size: 24px;
+  }
+
+  .hero a{
+    width: 225px;
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1440px){
@@ -181,10 +193,24 @@ html {
 
 /*------СЕКЦИЯ---------*/
 .section {
+  display: flex;
+   align-items: center;
+   flex-direction: column;
 padding-top: 24px;
   padding-bottom: 24px;
 
 }
+@media screen and (min-width: 768px){
+  .container{
+   width: 470px;
+  }
+
+  .features{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 
 .features {
   padding: 0;
