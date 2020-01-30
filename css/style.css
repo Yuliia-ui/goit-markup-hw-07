@@ -22,7 +22,7 @@ html {
   list-style: none;
 }
 
-/*Навигация*/
+/*-----Навигация-----*/
 .container {
   max-width: 1170px;
   padding-right: 12px;
@@ -32,7 +32,7 @@ html {
 }
 
 .header {
-  background-color: #a87171;
+  min-height: 500px;
 }
 
 .page-nav {
@@ -47,8 +47,8 @@ html {
 @media screen and (min-width: 768px) {
   .page-nav {
     width: 540px;
+    left: 20%;
     display: flex;
-    margin-top: 43px;
     padding: 0;
     align-items: center;
     flex-direction: row-reverse;
@@ -190,6 +190,11 @@ html {
   text-decoration: none;
 }
 
+.hero-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ff4e50;
+}
+
 /*------СЕКЦИЯ---------*/
 .section {
   padding-top: 67px;
@@ -218,6 +223,9 @@ html {
   }
 }
 
+.section-link {
+  display: block;
+}
 @media screen and (min-width: 1170px) {
   .hero-container {
     background-image: linear-gradient(
@@ -295,6 +303,11 @@ html {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+}
+
+.section-button:hover {
+  background-color: #ff4e50;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
