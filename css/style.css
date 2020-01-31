@@ -33,10 +33,10 @@ html {
 
 .header {
   min-height: 500px;
+  position: absolute;
 }
 
 .page-nav {
-  position: absolute;
   padding-top: 20px;
   padding-right: 26px;
   padding-left: 26px;
